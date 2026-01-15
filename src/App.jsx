@@ -1,5 +1,5 @@
 import './App.css'
-import { ConnectForm } from './components/ConnectForm';
+import ConnectForm from './components/ConnectForm';
 
 function App() {
 

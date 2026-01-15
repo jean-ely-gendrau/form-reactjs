@@ -1,7 +1,7 @@
 import { useState } from "react";
 import InputForm from "./InputForm";
 
-export function ConnectForm() {
+export default function ConnectForm() {
 
     const [email, setEmail] = useState("");
 
