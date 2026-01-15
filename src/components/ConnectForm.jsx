@@ -4,6 +4,7 @@ import InputForm from "./InputForm";
 export default function ConnectForm() {
 
     const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
 
     // Fonction appelée lors de la soumission du formulaire
     const handleSubmit = (e) => {
@@ -25,8 +26,14 @@ export default function ConnectForm() {
                     onChange={(e) => setEmail(e.target.value)}
                     value={email}
                 />
+                <InputForm
+                    label="password"
+                    placeholder="Entre ton"
+                    onChange={(e) => setPassword(e.target.value)}
+                    value={password}
+                />
 
-                <button type="submit">Evoyer</button>
+                <button type="submit">Enoyer</button>
             </form>
         </>
     )
