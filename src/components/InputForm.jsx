@@ -1,4 +1,15 @@
-// Composant réutilisable : accepte des props pour personnaliser son comportement
+/**
+ * InputForm - Composant d'input contrôlé réutilisable
+ *
+ * @param {string} label - Identifiant unique servant pour l'id, le name et le texte du label
+ * @param {function} onChange - Callback appelé à chaque modification (reçoit l'event)
+ * @param {string} value - Valeur actuelle de l'input (controlled component)
+ * @param {string} placeholder - Texte d'indication (défaut: "Entrez votre")
+ * @param {string} type - Type d'input HTML (défaut: "text")
+ * @param {string} classParent - Classes CSS du conteneur
+ * @param {string} classEnfant - Classes CSS de l'input
+ * @param {string} classLabel - Classes CSS du label
+ */
 function InputForm(
     {
         label,
@@ -13,6 +24,7 @@ function InputForm(
 
     return (
         <div className={classParent}>
+            {/* htmlFor lie le label à l'input pour l'accessibilité (clic sur label = focus input) */}
             <label htmlFor={`id-${label}`} className={classLabel}>Entrez votre {label}</label>
             <input
                 id={`id-${label}`}
@@ -26,6 +38,7 @@ function InputForm(
                 placeholder={`${placeholder} ${label}`}
             />
 
+            {/* Affichage en temps réel de la valeur saisie */}
             <p>Vous avez entré: {value}</p>
         </div>
     )
