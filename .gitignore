@@ -23,5 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 
-# Fichiers temporaires Claude
+# Fichiers tmp Claude
 *-cwd
