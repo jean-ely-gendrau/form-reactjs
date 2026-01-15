@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 # Fichiers temporaires Claude
-tmpclaude-*-cwd
+*-cwd

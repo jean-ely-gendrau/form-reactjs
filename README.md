@@ -31,6 +31,19 @@ function App() {
 }
 ```
 
+### ⚠️ Limitation actuelle
+
+**Important** : Actuellement, le state est géré **à l'intérieur** du composant InputValueString. Cela signifie que le composant parent (comme `App.jsx`) ne peut pas accéder aux valeurs saisies.
+
+**Problème** : Dans un vrai formulaire, tu as besoin de récupérer toutes les valeurs pour les envoyer à un serveur ou les traiter.
+
+**Prochaine étape** : Tu vas apprendre à "remonter le state" vers le composant parent pour pouvoir gérer un formulaire complet. Il existe plusieurs solutions :
+- Passer des fonctions callback via les props
+- Gérer le state dans le composant parent
+- Utiliser des refs pour accéder aux valeurs
+
+Pour l'instant, ce composant te permet de comprendre les bases des inputs contrôlés. La suite viendra !
+
 ### Props disponibles
 
 | Prop | Type | Valeur par défaut | Description |
