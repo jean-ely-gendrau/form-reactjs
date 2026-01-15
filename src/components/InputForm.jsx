@@ -38,8 +38,6 @@ function InputForm(
                 placeholder={`${placeholder} ${label}`}
             />
 
-            {/* Affichage en temps réel de la valeur saisie */}
-            <p>Vous avez entré: {value}</p>
         </div>
     )
 }
