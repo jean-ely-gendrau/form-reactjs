@@ -15,6 +15,7 @@ function InputForm(
         label,
         onChange,
         value,
+        error,
         placeholder = "Entrez votre",
         type = "text",
         classParent = "flex flex-col",
@@ -38,6 +39,8 @@ function InputForm(
                 placeholder={`${placeholder} ${label}`}
             />
 
+            {/* Affichage en temps réel les erreurs */}
+            {error && <p className="text-red-500">{error}</p>}
         </div>
     )
 }
